@@ -1,0 +1,29 @@
+.footer {
+  margin-top: 5rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--color-white-secondary);
+  color: var(--color-grey-primary);
+}
+
+.container {
+  padding: 0.5rem;
+  color: var(--color-grey-primary);
+  border-radius: 1.5rem;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.copyright {
+  font-size: 1.6rem;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.img {
+  grid-column: 2 / -1;
+  grid-row: 1 / -1;
+  margin-left: 3%;
+}
