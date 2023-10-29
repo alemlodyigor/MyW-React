@@ -5,6 +5,7 @@ import Actual from "../Actual/Actual";
 
 import classes from "./Home.module.css";
 import More from "../More/More";
+import Recent from "../Recent/Recent";
 
 const Home = () => {
   return (
@@ -19,8 +20,8 @@ const Home = () => {
           <section>More container precipitation</section>
           <section>Forecast Container</section>
         </main>
+        <Recent />
       </div>
-      <main></main>
       <Footer />
     </>
   );
