@@ -1,0 +1,43 @@
+.tempContainer {
+  background-color: var(--color-white-secondary);
+  color: var(--color-grey-primary);
+  box-shadow: 0px 1px 13px -5px var(--box-shadow-color-grey);
+
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+  padding: 1rem 0.5rem;
+  width: 84.4rem;
+}
+
+@media only screen and (max-width: 1103px) {
+  .tempContainer {
+    width: 100vw;
+  }
+}
+
+.tempH3 {
+}
+
+.tempData {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+
+  overflow-x: scroll;
+}
+
+.hourlyData {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr 1fr 1fr;
+  justify-items: center;
+}
+
+.hourlyImg {
+}
+
+.tempParagraph {
+}
+
+.hour {
+  font-size: 1.2rem;
+}

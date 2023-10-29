@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
+
+import classes from "./Temp.module.css";
 
 const Temp = () => {
-  return (
-    <div>Temp</div>
-  )
-}
+  return <section clasName={classes.tempContainer}></section>;
+};
 
-export default Temp
+export default Temp;
