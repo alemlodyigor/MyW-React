@@ -1,0 +1,103 @@
+.header {
+  grid-column: 2 / 3;
+  background-color: var(--color-white-secondary);
+  color: var(--color-grey-primary);
+  margin-bottom: 4rem;
+  border-radius: 0rem 0rem 1rem 1rem;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 2.1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 2rem;
+  position: relative;
+}
+
+.logo {
+  width: 10rem;
+}
+
+.form {
+  grid-column: 2 / 3;
+  position: relative;
+  width: 75%;
+  align-self: center;
+}
+
+.searchField {
+  font-size: 1.6rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem;
+  transition: all 0.3s;
+}
+
+.searchIcon {
+  position: absolute;
+  transform: scaleX(-1);
+  width: 2.4rem;
+  height: 2.4rem;
+  top: 10%;
+  right: 1%;
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.optionsTheme {
+  grid-column: 3 / 4;
+  align-self: center;
+  justify-self: center;
+  cursor: pointer;
+
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.theme {
+  cursor: pointer;
+}
+
+.optionsLang {
+}
+
+.langSelect {
+  cursor: pointer;
+  border: none;
+}
+
+.langSelectOption {
+}
+
+.hidden {
+}
+
+@media only screen and (max-width: 1103px) {
+  .header {
+    grid-column: 1 / 4;
+  }
+  .optionsTheme {
+    justify-self: left;
+    margin-left: 2rem;
+  }
+  .form {
+    justify-self: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .logo {
+    width: 5rem;
+  }
+}
+
+@media only screen and (max-width: 371px) {
+  .menu {
+    padding: 2rem 0rem 2rem 0rem;
+  }
+}

@@ -12,12 +12,12 @@ const Header = () => {
 
   return (
     <header className={classes.header}>
-      <section class="nav-menu">
-        <img src={LOGO} alt="" class="MyW Logo" />
-        <form class="nav-menu__form">
+      <section className={classes.menu}>
+        <img src={LOGO} alt="MyW Logo" className={classes.logo} />
+        <form className={classes.form}>
           <Input
             type="text"
-            class={classes.serachField}
+            class={classes.searchField}
             onAction={setCityHandle}
             value={city}
             placeholder="Search city"
@@ -28,7 +28,7 @@ const Header = () => {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className={classes.icon}
+            className={classes.searchIcon}
           >
             <path
               strokeLinecap="round"
